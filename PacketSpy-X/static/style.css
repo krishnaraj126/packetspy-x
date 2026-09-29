@@ -1,0 +1,79 @@
+body {
+    background: #020617;
+    color: #e5e7eb;
+    font-family: Segoe UI, Arial;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.stats div {
+    border: 1px solid #38bdf8;
+    padding: 12px;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.stats span {
+    font-size: 22px;
+    color: #38bdf8;
+}
+
+.actions {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #1e3a8a;
+    padding: 8px;
+    font-size: 13px;
+}
+
+th {
+    background: #0f172a;
+}
+
+.ok {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.bad {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.ip {
+    cursor: pointer;
+    color: #38bdf8;
+    text-decoration: underline;
+}
+canvas {
+    background: #020617;
+    border: 1px solid #1e3a8a;
+    border-radius: 12px;
+    padding: 10px;
+}

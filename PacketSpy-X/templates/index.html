@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PacketSpy-X – Network Monitor</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>PacketSpy-X – Network Monitor</h1>
+
+<div class="stats">
+    <div>Total Packets<br><span id="total">0</span></div>
+    <div>TCP<br><span id="tcp">0</span></div>
+    <div>UDP<br><span id="udp">0</span></div>
+    <div>Suspicious<br><span id="suspicious">0</span></div>
+</div>
+
+<div class="actions">
+    <button onclick="enableDemo()">Enable Demo Mode</button>
+    <button onclick="disableDemo()">Disable Demo Mode</button>
+    <button onclick="exportCSV()">Download CSV</button>
+</div>
+
+<canvas id="trafficChart" width="800" height="300"></canvas>
+
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Source IP</th>
+            <th>Destination IP (click)</th>
+            <th>Protocol</th>
+            <th>Size</th>
+            <th>Status</th>
+            <th>Reason</th>
+        </tr>
+    </thead>
+    <tbody id="packetBody"></tbody>
+</table>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
